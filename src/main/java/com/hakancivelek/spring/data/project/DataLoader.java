@@ -1,6 +1,6 @@
 package com.hakancivelek.spring.data.project;
 
-import com.hakancivelek.spring.data.project.pageableExample.ProductService;
+import com.hakancivelek.spring.data.project.pageAndSlice.ProductService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.hakancivelek.spring.data.project.pageableExample;
+package com.hakancivelek.spring.data.project.pageAndSlice;
 
 import com.hakancivelek.spring.data.project.Product;
 import org.springframework.data.domain.Page;
