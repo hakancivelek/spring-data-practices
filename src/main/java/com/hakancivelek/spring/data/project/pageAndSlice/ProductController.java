@@ -43,4 +43,11 @@ public class ProductController {
         Pageable pageable = PageRequest.of(page, size);
         return productService.findByPriceGreaterThanEqual(min, pageable);
     }
+
+    @PutMapping("/{id}")
+    public Product updateProduct(
+            @PathVariable Long id,
+            @RequestBody Product updatedProduct) {
+        return productService.updateProduct(id, updatedProduct.getName(), updatedProduct.getPrice());
+    }
 }

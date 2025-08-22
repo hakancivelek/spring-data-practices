@@ -29,4 +29,13 @@ public class ProductService {
     public Iterable<Product> findAll() {
         return productRepo.findAll();
     }
+
+    public Product updateProduct(Long id, String newName, Double newPrice) {
+        Product product = productRepo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Product not found"));
+        product.setName(newName);
+        product.setPrice(newPrice);
+        return productRepo.save(product);
+    }
+
 }
